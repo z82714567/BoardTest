@@ -1,0 +1,45 @@
+.main-div{
+    width: 1000px;
+    border: 1px solid black;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 800px;
+    margin: 100px auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr{
+    cursor: pointer;
+}
+
+tbody tr:hover{
+    background-color: aliceblue;
+}

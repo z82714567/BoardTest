@@ -1,0 +1,39 @@
+.main-div{
+    width: 1000px;
+    border: 1px solid black;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    margin-top: 40px;
+    display: flex;
+}
+
+.title-bar{
+    width: 50px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-area{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

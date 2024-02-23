@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tenco.bookhub.repository.UserRepository"> <!-- 레파지토리 패키지명 -->
+	<insert id="signup"> <!-- 레파지토리 메소드명 복붙 -->
+	INSERT INTO user(`username`, `name`, `password`, `phone`, `create_date`) 
+	VALUES (#{username}, #{name}, #{password}, #{phone}, NOW()); <!-- #{} 중괄호!!! -->
+	</insert>
+
+	<select id="getUser" resultType="com.tenco.bookhub.entity.User"> 
+	SELECT * FROM user WHERE username = #{username};
+	</select>
+</mapper>
